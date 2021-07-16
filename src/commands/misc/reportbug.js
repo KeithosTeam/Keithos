@@ -45,7 +45,7 @@ module.exports = class ReportBugCommand extends Command {
       .setDescription(oneLine`
         Successfully sent bug report!
         Please join the [Kiethos Support Server](https://discord.gg/M7nDZxKk24) to further discuss your issue.
-        Additionally, feel free to submit an issue on [GitHub](https://github.com/MCorange99/keithos/issues).
+        Additionally, feel free to submit an issue on [GitHub](https://github.com/KeithosTeam/Keithos/issues).
       `) 
       .addField('Member', message.member, true)
       .addField('Message', report)

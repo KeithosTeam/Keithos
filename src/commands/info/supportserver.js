@@ -18,7 +18,7 @@ module.exports = class SupportServerCommand extends Command {
       .setDescription('Click [here](https://discord.gg/M7nDZxKk24) to join the Keithos Support Server!')
       .addField('Other Links', 
         '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=0&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot) | ' +
-        '[Repository](https://github.com/MCorange99/keithos)**'
+        '[Repository](https://github.com/KeithosTeam/Keithos)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()

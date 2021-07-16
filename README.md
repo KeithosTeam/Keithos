@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <a href="https://github.com/MCorange99/keithos"><img src="./data/images/Calypso_Title.png"></a>
+    <a href="https://github.com/KeithosTeam/Keithos"><img src="./data/images/Calypso_Title.png"></a>
     <br>
     Keithos Discord Bot
     <br>

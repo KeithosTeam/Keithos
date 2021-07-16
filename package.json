@@ -35,12 +35,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MCorange99/keithos.git"
+    "url": "git+https://github.com/KeithosTeam/Keithos.git"
   },
   "author": "MCorange",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/MCorange99/keithos/issues"
+    "url": "https://github.com/KeithosTeam/Keithos/issues"
   },
-  "homepage": "https://github.com/MCorange99/keithos/blob/main/README.md"
+  "homepage": "https://github.com/KeithosTeam/Keithos/blob/main/README.md"
 }

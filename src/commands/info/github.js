@@ -17,7 +17,7 @@ module.exports = class GitHubCommand extends Command {
       .setTitle('GitHub Link')
       .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setDescription(oneLine`
-        Click [here](https://github.com/MCorange99/keithos) to to visit my GitHub repository!
+        Click [here](https://github.com/KeithosTeam/Keithos) to to visit my GitHub repository!
         Please support me by starring ⭐ the repo, and feel free to comment about issues or suggestions!
       `)
       .addField('Other Links',

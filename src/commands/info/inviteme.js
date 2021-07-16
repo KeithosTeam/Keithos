@@ -21,7 +21,7 @@ module.exports = class InviteMeCommand extends Command {
       `)
       .addField('Other Links', 
         '**[Support Server](https://discord.gg/M7nDZxKk24) | ' +
-        '[Repository](https://github.com/MCorange99/keithos)**'
+        '[Repository](https://github.com/KeithosTeam/Keithos)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
