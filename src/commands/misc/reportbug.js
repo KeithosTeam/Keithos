@@ -50,7 +50,7 @@ module.exports = class ReportBugCommand extends Command {
       .addField('Member', message.member, true)
       .addField('Message', report)
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
-      .setTimestamp()
+      .setTimestamp() 
       .setColor(message.guild.me.displayHexColor);
     message.channel.send(embed);
   }
