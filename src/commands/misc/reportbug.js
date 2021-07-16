@@ -54,4 +54,4 @@ module.exports = class ReportBugCommand extends Command {
       .setColor(message.guild.me.displayHexColor);
     message.channel.send(embed);
   }
-};
+}; 
