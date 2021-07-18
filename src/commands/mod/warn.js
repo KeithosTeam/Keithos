@@ -7,7 +7,7 @@ module.exports = class WarnCommand extends Command {
     super(client, {
       name: 'warn',
       usage: 'warn <user mention/ID> [reason]',
-      description: 'Warns a member in your server.',
+      description: 'Warns a member in your server. KICK_MEMBERS permission. If autokick is enabled',
       type: client.types.MOD,
       clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'KICK_MEMBERS'],
       userPermissions: ['KICK_MEMBERS'],
