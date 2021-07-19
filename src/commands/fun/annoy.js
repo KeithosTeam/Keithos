@@ -32,13 +32,19 @@ if (x > 20){
 
             const sliced = args.slice(1)
 
-            for (; times > 0; times--) { //a loop!
+        ;                  //  set your counter to 1
 
-                setTimeout(
-                    function () {
-                        message.channel.send(sliced.join(' '))
-                    }, 5000);
+            function myLoop() {         //  create a loop function
+            setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+                message.channel.send(sliced.join(' '))  //  your code here
+                times--;                    //  increment the counter
+                if (times > 1) {           //  if the counter < 10, call the loop function
+                myLoop();             //  ..  again which will trigger another 
+                }                       //  ..  setTimeout()
+            }, 5000)
             }
+
+            myLoop();
         } else {
 
             const embed1 = new MessageEmbed()
