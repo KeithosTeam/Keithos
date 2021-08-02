@@ -75,7 +75,7 @@
   
   ## Installation
   
-  You can add Keithos to your server with [this](https://discord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=4294967287https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commands&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands) link!.
+  You can add Keithos to your server with [this](hhttps://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commands) link!.
   
   
   ### Colors

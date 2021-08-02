@@ -16,7 +16,7 @@ module.exports = class InviteMeCommand extends Command {
     const embed = new MessageEmbed()
       .setTitle('Invite Me')
       .setDescription(oneLine`
-        Click [here](https://dischttps://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commandsord.com/api/oauth2/authorize?client_id=837371090783174696&permissions=4294967287&redirect_uri=https%3A%2F%2Fdiscord.events.stdlib.com%2Fdiscord%2Fauth%2F&scope=bot%20applications.commands)
+        Click [here](https://discord.com/oauth2/authorize?client_id=837371090783174696&permissions=261993005047&scope=bot%20applications.commands)
         to invite me to your server!
       `)
       .addField('Other Links', 
