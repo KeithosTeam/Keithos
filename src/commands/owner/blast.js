@@ -6,7 +6,7 @@ module.exports = class BlastCommand extends Command {
     super(client, {
       name: 'blast',
       usage: 'blast <message>',
-      description: 'Sends a message to every server that Calypso is in that has a system channel.',
+      description: 'Sends a message to every server that Keithos is in that has a system channel.',
       type: client.types.OWNER,
       ownerOnly: true,
       examples: ['blast Hello World!']

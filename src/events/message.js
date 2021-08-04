@@ -37,7 +37,7 @@ module.exports = (client, message) => {
           // Update points with messagePoints value
           if (pointTracking)
             client.db.users.updatePoints.run({ points: messagePoints }, message.author.id, message.guild.id);
-          return; // Return early so Calypso doesn't respond
+          return; // Return early so Keithos doesn't respond
         }
       }
 
@@ -82,7 +82,7 @@ module.exports = (client, message) => {
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Calypso. Need help?')
+        .setTitle('Hi, I\'m Keithos. Need help?')
         .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
@@ -91,7 +91,7 @@ module.exports = (client, message) => {
         `)
         .addField('Support', oneLine`
           If you have questions, suggestions, or found a bug, please join the 
-          [Calypso Support Server](https://discord.gg/M7nDZxKk24)!
+          [Keithos Support Server](https://discord.gg/M7nDZxKk24)!
         `)
         .setFooter('DM MCorange#0001 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);

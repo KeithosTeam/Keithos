@@ -8,7 +8,7 @@ module.exports = class UptimeCommand extends Command {
       name: 'uptime',
       aliases: ['up'],
       usage: 'uptime',
-      description: 'Fetches Calypso\'s current uptime.',
+      description: 'Fetches Keithos\'s current uptime.',
       type: client.types.INFO
     });
   }

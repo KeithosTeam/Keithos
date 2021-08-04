@@ -41,7 +41,7 @@ module.exports = class FeedbackCommand extends Command {
       .setThumbnail('https://rawgithub.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
       .setDescription(oneLine`
         Successfully sent feedback!
-        Please join the [Keithso Support Server](https://discord.gg/M7nDZxKk24) to further discuss your feedback.
+        Please join the [Keithos Support Server](https://discord.gg/M7nDZxKk24) to further discuss your feedback.
       `) 
       .addField('Member', message.member, true)
       .addField('Message', feedback)

@@ -8,7 +8,7 @@ module.exports = class InviteMeCommand extends Command {
       name: 'inviteme',
       aliases: ['invite', 'invme', 'im'],
       usage: 'inviteme',
-      description: 'Generates a link you can use to invite Calypso to your own server.',
+      description: 'Generates a link you can use to invite Keithos to your own server.',
       type: client.types.INFO
     });
   }
