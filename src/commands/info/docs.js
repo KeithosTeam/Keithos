@@ -14,7 +14,7 @@ module.exports = class docs extends Command {
     }
     run(message) {
       const embed = new MessageEmbed()
-        .setTitle('Official Website Link')
+        .setTitle('Official Documentation Link')
         .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .setDescription(oneLine`
           Click [here](http://docs.mcorange.tk) to to visit my Official documentation website!
