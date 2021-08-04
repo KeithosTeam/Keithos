@@ -7,7 +7,7 @@ module.exports = class poll extends Command {
             name: "poll",
             description: "Create a quick poll",
             examples: ["poll <text>", "poll [channel] <text>"],
-            aliases: [],
+            // aliases: [],
             type: client.types.MOD,
             clientPermissions: ['SEND_MESSAGES', 'EMBED_LINKS', 'ADD_REACTIONS'],
             userPermissions: ['MANAGE_GUILD'],
