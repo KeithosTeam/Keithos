@@ -4,7 +4,7 @@ const { success } = require('../utils/emojis.json');
 
 module.exports = async (client, guild) => {
 
-  client.logger.info(`Calypso has joined ${guild.name}`);
+  client.logger.info(`Keithos has joined ${guild.name}`);
   const serverLog = client.channels.cache.get(client.serverLogId);
   if (serverLog)
     serverLog.send(new MessageEmbed().setDescription(`${client.user} has joined **${guild.name}** ${success}`));
