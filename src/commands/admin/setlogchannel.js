@@ -6,9 +6,9 @@ const { oneLine, stripIndent } = require('common-tags');
 module.exports = class SetMemberLogCommand extends Command {
   constructor(client) {
     super(client, {
-      name: 'setlog',
-      aliases: ['sl'],
-      usage: 'setlog <channel mention/ID>',
+      name: 'setlogchannel',
+      aliases: ['slc'],
+      usage: 'setlogchannel <channel mention/ID>',
       description: oneLine`
         Sets all log text channels for your server. 
         Provide no channel to clear the current \`log\` channel.
