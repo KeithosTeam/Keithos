@@ -40,6 +40,12 @@
     •
     <a href="#credits">Credits</a>
   </p>
+
+  <p align="center">
+    <a href="http://keithos.mcorange.tk/">Official website</a>
+    •
+    <a href="http://docs.mcorange.tk/"> Documentation</a>
+  </p>
   
   ## About
   
