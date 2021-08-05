@@ -155,7 +155,7 @@ class Command {
    * @param {Message} message 
    * @param {boolean} ownerOverride 
    */
-  checkPermissions(message, ownerOverride = true) {
+  checkPermissions(message, ownerOverride = false) {
     if (!message.channel.permissionsFor(message.guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS'])) return false;
     const clientPermission = this.checkClientPermissions(message);
     const userPermission = this.checkUserPermissions(message, ownerOverride);
@@ -169,7 +169,7 @@ class Command {
    * @param {Message} message 
    * @param {boolean} ownerOverride 
    */
-  checkUserPermissions(message, ownerOverride = true) {
+  checkUserPermissions(message, ownerOverride = false) {
     if (!this.ownerOnly && !this.userPermissions) return true;
     if (ownerOverride && this.client.isOwner(message.author)) return true;
     if (this.ownerOnly && !this.client.isOwner(message.author)) {
