@@ -29,7 +29,7 @@ module.exports = class BotInfoCommand extends Command {
         Keithos is an open source, fully customizable Discord bot that is constantly growing.
         She comes packaged with a variety of commands and 
         a multitude of settings that can be tailored to your server's specific needs. 
-        Her codebase also serves as a base framework to easily create Discord bots of all kinds..
+        his codebase also serves as a base framework to easily create Discord bots of all kinds..
       `)
       .addField('Prefix', `\`${prefix}\``, true)
       .addField('Client ID', `\`${message.client.user.id}\``, true)
