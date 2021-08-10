@@ -4,7 +4,7 @@ const { Intents } = require('discord.js');
 
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 3912;
 
 app.get('/', (req, res) => res.send('Hello World!'));
 
