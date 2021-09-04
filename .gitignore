@@ -5,7 +5,6 @@ data/emojis
 .vscode
 .directory
 to-do.txt
-package-lock.json
 config.json
 .sqlite
 .sqlite-wal
@@ -16,4 +15,4 @@ data/db.sqlite-wal
 
 # do not ignore
 !.gitkeep
-data/db.sqlite-shm
+
