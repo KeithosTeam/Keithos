@@ -1,4 +1,4 @@
-const Command = require('../Command.js');
+const Command = require('../Command.js'); 
 
 //can replace MyCommandName with your command name 
 module.exports = class MyCommandName extends Command {
