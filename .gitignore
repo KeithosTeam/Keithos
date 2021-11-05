@@ -12,8 +12,9 @@ config.json
 data/db.sqlite
 data/db.sqlite-shm
 data/db.sqlite-wal
-
+TODO
+test.js
 # do not ignore
 !.gitkeep
 
-TODO
+
