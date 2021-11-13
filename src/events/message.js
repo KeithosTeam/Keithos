@@ -1,5 +1,7 @@
 const { MessageEmbed, Collection } = require('discord.js');
 const { oneLine } = require('common-tags');
+const serverblacklist = require('../../serverbanlist.json')
+
 
 module.exports = (client, message) => {
   if (message.channel.type === 'dm' || !message.channel.viewable || message.author.bot) return;
@@ -26,7 +28,14 @@ module.exports = (client, message) => {
     const args = message.content.slice(match.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
     let command = client.commands.get(cmd) || client.aliases.get(cmd); // If command not found, check aliases
-    if (command && !disabledCommands.includes(command.name)) {
+    if (command && !disabledCommands.includes(command.name)&& !serverblacklist.bans.includes(message.guild.id)) {
+
+      if(serverblacklist.bans.includes(message.guild.id) ){
+    
+        client.logger.info(`Someone tried to use commands in ${message.guild.name}(${message.guild.id}), but the server is banned in serverbanlist.json`);
+        message.channel.send('Your server is blacklisted. If you think this is an error please contact us to fix it.\n Our support server: https://discord.gg/M7nDZxKk24 \n Main developer: MCorange#4829')
+        return
+      }
 
       // Check if mod channel
       if (modChannelIds.includes(message.channel.id)) {
@@ -76,13 +85,13 @@ module.exports = (client, message) => {
         message.command = true; // Add flag for messageUpdate event
         return command.run(message, args); // Run command
       }
-    } else if (
+    } else if(!serverblacklist.bans.includes(message.guild.id)){if (
       (message.content === `<@${client.user.id}>` || message.content === `<@!${client.user.id}>`) &&
       message.channel.permissionsFor(message.guild.me).has(['SEND_MESSAGES', 'EMBED_LINKS']) &&
       !modChannelIds.includes(message.channel.id)
     ) {
       const embed = new MessageEmbed()
-        .setTitle('Hi, I\'m Keithos. Need help?')
+      .setTitle('Hi, I\'m Keithos. Need help?')
         .setThumbnail('https://raw.github.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
         .setDescription(`You can see everything I can do by using the \`${prefix}help\` command.`)
         .addField('Invite Me', oneLine`
@@ -96,6 +105,10 @@ module.exports = (client, message) => {
         .setFooter('DM MCorange#0001 to speak directly with the developer!')
         .setColor(message.guild.me.displayHexColor);
       message.channel.send(embed);
+    }} else {
+        client.logger.info(`Someone tried to use commands in ${message.guild.name}(${message.guild.id}), but the server is banned in serverbanlist.json`);
+        message.channel.send('Your server is blacklisted. If you think this is an error please contact us to fix it.\n Our support server: https://discord.gg/M7nDZxKk24 \n Main developer: MCorange#4829')
+        return
     }
   }
 
