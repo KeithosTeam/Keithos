@@ -15,7 +15,7 @@ module.exports = class MyCommandName extends Command {
     const embed = new MessageEmbed()
     .setTitle('Vote For Keithos')
     .setThumbnail('https://raw.githubusercontent.com/MCorange99/keithos/blob/main/data/images/Calypso.png')
-    .addField('Discord.boats','[Link](https://discord.boats/bot/837371090783174696)')
+    .addField('Top.gg','[Link](https://top.gg/bot/837371090783174696)')
     .addField('Discordbotlist.com','[Link](https://discordbotlist.com/bots/keithos)')
     .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
     .setTimestamp()
